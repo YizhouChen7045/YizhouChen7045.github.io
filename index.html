@@ -1,184 +1,124 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yizhou Chen</title>
+  <meta name="author" content="Yizhou Chen">
+  <meta name="description" content="Yizhou Chen, Ph.D. candidate in Robotics at the University of Michigan. Perception, modeling and planning for deformable object manipulation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <main class="page">
 
-    <title>My Personal Website</title>
+    <header class="intro">
+      <div class="intro-text">
+        <h1 class="name">Yizhou Chen</h1>
+        <p class="role">Ph.D. Candidate in Robotics · University of Michigan</p>
+        <p>
+          I am a member of the <a href="https://www.roahmlab.com/">ROAHM Lab</a>, advised by
+          Prof. <a href="https://www.roahmlab.com/">Ram Vasudevan</a>. I work on the perception, modeling,
+          and planning of deformable objects. My dream demo is a fully autonomous wire harness assembly.
+        </p>
+        <p>
+          Previously, I worked in the <a href="https://www.mmintlab.com/">MMint Lab</a> with
+          Prof. Nima Fazeli on visuo-tactile representation learning for robotic manipulation.
+        </p>
+        <nav class="links" aria-label="Profiles">
+          <a class="pill" href="mailto:yizhouch@umich.edu">Email</a>
+          <a class="pill" href="data/Yizhou_Chen_CV.pdf">CV</a>
+          <a class="pill" href="https://scholar.google.com/citations?user=F81ZmWMAAAAJ&amp;hl=en">Google Scholar</a>
+          <a class="pill" href="https://github.com/YizhouChen7045">GitHub</a>
+        </nav>
+      </div>
+      <a class="photo" href="images/YizhouChen.jpg">
+        <img src="images/YizhouChen.jpg" alt="Portrait of Yizhou Chen">
+      </a>
+    </header>
 
-    <meta name="author" content="Yizhou Chen">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon and CSS are optional; remove or modify these as you like. -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <section aria-labelledby="news">
+      <h2 id="news">News</h2>
+      <ul class="news">
+        <li><span class="date">2026</span><span><a href="https://roahmlab.github.io/DEFT/">DEFT</a> is accepted to <em>The International Journal of Robotics Research (IJRR)</em>.</span></li>
+        <li><span class="date">2026</span><span><a href="https://roahmlab.github.io/trackDeform3D-core-tracking/">TrackDeform3D</a> is accepted to <em>IROS 2026</em>.</span></li>
+      </ul>
+    </section>
 
-    <style>
-      /* (Optional) Some minimal inline CSS to mimic original styling */
-      body {
-        font-family: sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .name {
-        font-size: 1.8em;
-        font-weight: bold;
-      }
-      .papertitle {
-        font-weight: bold;
-      }
-      .one {
-        position: relative;
-      }
-      .two {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-    </style>
-  </head>
+    <section aria-labelledby="pubs">
+      <h2 id="pubs">Publications</h2>
+      <p class="note">* equal contribution</p>
 
-  <body>
-    <!-- Top-Level Container -->
-    <table style="width:100%;max-width:800px;margin:auto;border:0; border-spacing:0; padding:0;">
-      <tbody>
-        <!-- Header row -->
-        <tr>
-          <td>
-            <table style="width:100%;border:0; padding:0; border-spacing:0;">
-              <tbody>
-                <tr>
-                  <!-- Left side: Name and introduction -->
-                  <td style="padding:2.5%;width:72%;vertical-align:middle;">
-                    <p class="name" style="text-align: center;">Yizhou Chen</p>
-                    <p>
-                     I am currently a Ph.D. candidate in robotics at the University of Michigan. 
-                     I am a member of <a href="https://www.roahmlab.com/">ROAHM Lab</a> supervised by Prof. Ram Vasudevan.  
-                     My current research interests include the perception, modeling, and planning of deformable objects.
-                     My dream demo is to make wireharness assembly fully autonomous.
-                     <br />
-                     <br />
-                      Previously, I worked at <a href="https://www.mmintlab.com/">MMint Lab</a>, supervised by Prof. Nima Fazeli, researching visuo-tactile representation for robotic manipulation.                    </p>
-                    <p style="text-align:center">
-                      <a href="mailto:yizhouch@umich.edu">Email</a> &nbsp;/&nbsp;
-                      <a href="data/Yizhou_Chen_CV.pdf">CV</a> &nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?user=F81ZmWMAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/yich7045">Github</a>
-                    </p>
-                  </td>
-                  <!-- Right side: Photo -->
-                  <td style="padding:2.5%;width:28%;max-width:100%;">
-                    <a href="images/YizhouChen.jpg">
-                      <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 100%;" 
-                           alt="Yizhou Chen" src="images/YizhouChen.jpg">
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      <article class="pub">
+        <a class="thumb" href="https://roahmlab.github.io/DEFT/"><img src="images/thumb_deft.jpg" alt="DEFT: robot shape matching and inserting a branched cable"></a>
+        <div class="pub-body">
+          <h3><a href="https://roahmlab.github.io/DEFT/">DEFT: Differentiable Branched Discrete Elastic Rods for Modeling Furcated DLOs in Real-Time</a></h3>
+          <p class="authors"><b>Yizhou Chen</b>, Felicia Sang*, Shicheng Peng*, Xiaoyue Wu*, Yeheng Zong, Yuzhen Chen, Anran Li, Bohao Zhang, Ram Vasudevan</p>
+          <p class="venue"><span class="badge journal">IJRR 2026</span> The International Journal of Robotics Research (accepted)</p>
+          <p class="links-row">
+            <a href="https://arxiv.org/abs/2502.15037">arXiv</a>
+            <a href="https://roahmlab.github.io/DEFT/">Project page</a>
+            <a href="https://github.com/roahmlab/DEFT">Code</a>
+            <a href="https://www.youtube.com/watch?v=mwT6pzcyO2E">Video</a>
+          </p>
+          <p class="tldr">A differentiable physics model with residual learning for branched cables: momentum-conserving junction constraints, real-time inference above 100&nbsp;Hz, and planning for shape matching and thread insertion.</p>
+        </div>
+      </article>
 
-            <!-- Research Section -->
-            <table style="width:100%;border:0; border-spacing:0; padding:0;">
-              <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Research Projects</h2>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- SINGLE PROJECT: "DEFT" -->
-            <table style="width:100%;border:0; border-spacing:0;">
-                <tbody>
-                  <tr bgcolor="#ffffd0">
-                    <td style="padding:16px;width:20%;vertical-align:middle">
-                      <!-- Just a single image, no hover effect. -->
-                      <img src="images/Insertion.png" width="260" alt="Thread Insertion">
-                    </td>
-              
-                    <td style="padding:8px;width:80%;vertical-align:middle">
-                      <a href="https://roahmlab.github.io/DEFT/">
-                        <span class="papertitle">DEFT: Differentiable Branched Discrete Elastic Rods for Modeling Furcated DLOs in Real-Time</span>
-                      </a>
-                      <br><strong>Yizhou Chen</strong>, Xiaoyue Wu, Yeheng Zong, Yuzhen Chen, Anran Li, Bohao Zhang, Ram Vasudevan
-                      <br><em>arXiv</em>, 2025
-                      <br>
-                      <a href="https://arxiv.org/abs/2502.15037">arXiv</a> /
-                      <a href="https://roahmlab.github.io/DEFT/">project website</a>
-                      <p></p>
-                      <p>
-                        This paper presents Differentiable discrete branched Elastic rods for modeling Furcated DLOs in real-Time (DEFT), a novel framework that combines a differentiable physics-based model with a learning framework to: 
-                        1) accurately model branched deformable linear objects (BDLOs) dynamics, including dynamic propagation at junction points and grasping in the middle of a BDLO, 
-                        2) achieve efficient computation for real-time inference, 
-                        and 3) enable planning to demonstrate dexterous BDLO manipulation.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-                <hr>
+      <article class="pub">
+        <a class="thumb" href="https://roahmlab.github.io/trackDeform3D-core-tracking/"><img src="images/thumb_trackdeform3d.jpg" alt="TrackDeform3D: tracked keypoints on a cable and a cloth and the resulting 3D datasets"></a>
+        <div class="pub-body">
+          <h3><a href="https://roahmlab.github.io/trackDeform3D-core-tracking/">TrackDeform3D: Markerless and Autonomous 3D Keypoint Tracking and Dataset Collection for Deformable Objects</a></h3>
+          <p class="authors">Yeheng Zong, <b>Yizhou Chen</b>, Alexander Bowler, Chia-Tung Yang, Ram Vasudevan</p>
+          <p class="venue"><span class="badge conf">IROS 2026</span> IEEE/RSJ International Conference on Intelligent Robots and Systems</p>
+          <p class="links-row">
+            <a href="https://arxiv.org/abs/2603.17068">arXiv</a>
+            <a href="https://roahmlab.github.io/trackDeform3D-core-tracking/">Project page</a>
+            <a href="https://github.com/roahmlab/trackDeform3D-core-tracking">Code</a>
+            <a href="https://www.youtube.com/watch?v=eJ9P9GFlOIw">Video</a>
+          </p>
+          <p class="tldr">Recovers 3D keypoints and their topology from RGB-D recordings of cables, branched cables, fabric and cloth, and tracks them without markers or object-specific training.</p>
+        </div>
+      </article>
 
-            
-              <!-- SINGLE PROJECT: "DEFT" -->
-            <table style="width:100%;border:0; border-spacing:0;">
-                <tbody>
-                  <tr bgcolor="#ffffd0">
-                    <td style="padding:16px;width:20%;vertical-align:middle">
-                      <!-- Just a single image, no hover effect. -->
-                      <img src="images/DEFORM.png" width="260" alt="Thread Insertion">
-                    </td>
-              
-                    <td style="padding:8px;width:80%;vertical-align:middle">
-                      <a href="https://roahmlab.github.io/DEFORM/">
-                        <span class="papertitle">Differentiable Discrete Elastic Rods for Real-Time Modeling of Deformable Linear Objects</span>
-                      </a>
-                      <br><strong>Yizhou Chen</strong>, Yiting Zhang, Zachary Brei, Tiancheng Zhang, Yuzhen Chen, Julie Wu, Ram Vasudevan
-                      <br><em>CoRL</em>, 2024
-                      <br>
-                      <a href="https://arxiv.org/abs/2406.05931">arXiv</a> /
-                      <a href="https://roahmlab.github.io/DEFORM/">project website</a>
-                      <p></p>
-                      <p>
-                      This paper proposes differentiable Discrete Elastic Rods For deformable linear Objects with Real-time Modeling (DEFORM), a novel framework that combines a differentiable physics-based model with a learning framework to model deformable linear objects (DLOs) accurately and in real-time. 
-                        To further demonstrate the utility of DEFORM, this paper integrates it into a perception pipeline and illustrates its superior performance when compared to the state-of-the-art methods while tracking a DLO even in the presence of occlusions.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-                <hr>
+      <article class="pub">
+        <a class="thumb" href="https://roahmlab.github.io/DEFORM/"><img src="images/thumb_deform.jpg" alt="DEFORM: predicted and tracked rope states and the method overview"></a>
+        <div class="pub-body">
+          <h3><a href="https://roahmlab.github.io/DEFORM/">Differentiable Discrete Elastic Rods for Real-Time Modeling of Deformable Linear Objects</a></h3>
+          <p class="authors"><b>Yizhou Chen</b>, Yiting Zhang, Zachary Brei, Tiancheng Zhang, Yuzhen Chen, Julie Wu, Ram Vasudevan</p>
+          <p class="venue"><span class="badge conf">CoRL 2024</span> Conference on Robot Learning</p>
+          <p class="links-row">
+            <a href="https://arxiv.org/abs/2406.05931">arXiv</a>
+            <a href="https://roahmlab.github.io/DEFORM/">Project page</a>
+            <a href="https://github.com/roahmlab/DEFORM">Code</a>
+            <a href="https://www.youtube.com/watch?v=_wiSPTap9-g">Video</a>
+          </p>
+          <p class="tldr">DEFORM combines differentiable discrete elastic rods with learning to model ropes and cables accurately and in real time, and uses the model to track a cable through occlusions.</p>
+        </div>
+      </article>
 
-              <table style="width:100%;border:0; border-spacing:0;">
-                <tbody>
-                  <tr bgcolor="#ffffd0">
-                    <td style="padding:16px;width:20%;vertical-align:middle">
-                      <!-- Just a single image, no hover effect. -->
-                      <img src="images/VTT.png" width="260" alt="Thread Insertion">
-                    </td>
-              
-                    <td style="padding:8px;width:80%;vertical-align:middle">
-                      <a href="https://www.mmintlab.com/research/vtt/">
-                        <span class="papertitle">Visuo-Tactile Transformers for Manipulation </span>
-                      </a>
-                      <br><strong>Yizhou Chen</strong>, Andrea Sipos, Mark Van der Merwe, Nima Fazeli
-                      <br><em>CoRL</em>, 2022
-                      <br>
-                      <a href="https://arxiv.org/abs/2210.00121">arXiv</a> /
-                      <a href="https://www.mmintlab.com/research/vtt/">project website</a>
-                      <p></p>
-                      <p>
-                      This paper presents Visuo-Tactile Transformers (VTTs), a novel multimodal representation learning approach suited for model-based reinforcement learning and planning. 
-                        Our approach extends the Visual Transformer to handle visuo-tactile feedback. Specifically, VTT uses tactile feedback together with self and cross-modal attention to build latent heatmap representations that focus attention on important task features in the visual domain. 
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+      <article class="pub">
+        <a class="thumb" href="https://www.mmintlab.com/research/vtt/"><img src="images/thumb_vtt.jpg" alt="Visuo-Tactile Transformers: robot setup with cameras and force sensor, and the network architecture"></a>
+        <div class="pub-body">
+          <h3><a href="https://www.mmintlab.com/research/vtt/">Visuo-Tactile Transformers for Manipulation</a></h3>
+          <p class="authors"><b>Yizhou Chen</b>, Andrea Sipos, Mark Van der Merwe, Nima Fazeli</p>
+          <p class="venue"><span class="badge conf">CoRL 2022</span> Conference on Robot Learning</p>
+          <p class="links-row">
+            <a href="https://arxiv.org/abs/2210.00121">arXiv</a>
+            <a href="https://www.mmintlab.com/research/vtt/">Project page</a>
+            <a href="https://github.com/YizhouChen7045/Visuo-Tactile-Transformers-for-Manipulation">Code</a>
+            <a href="videos/VTT_video.mp4">Video</a>
+          </p>
+          <p class="tldr">A multimodal transformer for model-based reinforcement learning that uses tactile feedback with self- and cross-modal attention to focus on task-relevant regions of the image.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      Last updated October 2026 · Layout adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's template</a>.
+    </footer>
+  </main>
+</body>
 </html>
