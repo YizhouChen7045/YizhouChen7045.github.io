@@ -48,7 +48,7 @@ img { max-width: 100%; display: block; }
 /* Header */
 .intro {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 220px;
   gap: 40px;
   align-items: center;
   margin-bottom: 48px;
@@ -64,9 +64,9 @@ img { max-width: 100%; display: block; }
 .role { margin: 0 0 18px; color: var(--muted); font-weight: 500; }
 .intro p { margin: 0 0 12px; }
 .photo img {
-  width: 200px; height: 200px;
-  object-fit: cover; object-position: 50% 20%;
-  border-radius: 50%;
+  width: 220px; height: 220px;
+  object-fit: cover; object-position: 50% 50%;
+  border-radius: 16px;
   box-shadow: var(--shadow);
 }
 .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
@@ -148,7 +148,7 @@ section { margin-bottom: 44px; }
   .page { padding: 32px 16px; }
   .intro { grid-template-columns: 1fr; gap: 20px; text-align: left; }
   .photo { order: -1; }
-  .photo img { width: 140px; height: 140px; }
+  .photo img { width: 160px; height: 160px; }
   .name { font-size: 2.1rem; }
   .pub { grid-template-columns: 1fr; gap: 14px; padding: 16px; }
   .thumb { aspect-ratio: auto; }
