@@ -134,10 +134,13 @@ section { margin-bottom: 44px; }
   font-style: normal; font-weight: 600; font-size: .75rem; letter-spacing: .03em;
   padding: 2px 9px; margin-right: 6px;
   border-radius: 6px;
+  color: var(--conf); background: var(--conf-bg);
 }
-.badge.journal { color: var(--journal); background: var(--journal-bg); }
-.badge.conf { color: var(--conf); background: var(--conf-bg); }
 .links-row { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 0 0 10px; font-size: .9rem; font-weight: 500; }
+.award {
+  margin: 0 0 10px; font-size: .88rem; font-weight: 600; color: var(--journal);
+}
+.award::before { content: "\2605\00a0"; }
 .tldr { margin: 0; font-size: .93rem; }
 
 
